@@ -26,9 +26,9 @@ export const Subtitle = styled.p`
 export const ImageContainer = styled.div`
   background-image: url(${finance});
   background-size: cover;
-  margin-bottom: 50px;
-  width: 200px;
-  height: 200px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 500px;
 `;
 
 export const Form = styled.form`
@@ -53,14 +53,14 @@ export const Select = styled.select`
 
 export const Button = styled.button`
   padding: 10px 20px;
-  background-color: #8b008b;
+  background-color: #cb6e18;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 
   &:hover {
-    background-color: #a020a0;
+    background-color: #cb6e18;
   }
 `;
 
