@@ -87,6 +87,7 @@ const ChatGemini = ({ despesas }: { despesas: any[] }) => {
       {isOpen && (
         <S.ChatContainer>
           <S.ChatHeader>
+            
             <span>Conselheiro Financeiro</span>
 
             <S.ChatCloseIcon onClick={toggleChat} />

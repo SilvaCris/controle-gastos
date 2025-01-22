@@ -6,7 +6,7 @@ export const ChatIcon = styled.div`
   bottom: 60px;
   right: 16px;
   cursor: pointer;
-  background: #28af15;
+  background: #cb6e18;
   border-radius: 50%;
   padding: 10px;
   display: flex;
@@ -31,7 +31,7 @@ export const ChatContainer = styled.div`
 `;
 
 export const ChatHeader = styled.div`
-  background: #28af15;
+  background: #cb6e18;
   color: white;
   padding: 8px 16px;
   display: flex;
@@ -67,7 +67,7 @@ export const Input = styled.input`
 `;
 
 export const SendButton = styled.button`
-  background: #28af15;
+  background: #cb6e18;
   color: white;
   border: none;
   padding: 8px 12px;
