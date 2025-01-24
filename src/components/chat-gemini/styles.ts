@@ -29,6 +29,30 @@ export const ChatContainer = styled.div`
   flex-direction: column;
   overflow: hidden;
 `;
+export const UserName = styled.p`
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: #d1b3ff;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  text-align: left;
+   ${ChatContainer}:hover & {
+      opacity: 1;
+    }
+  `;
+
+  export const Avatar = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+`;
+
 
 export const ChatHeader = styled.div`
   background: #cb6e18;
@@ -39,6 +63,7 @@ export const ChatHeader = styled.div`
   align-items: center;
   font-weight: bold;
 `;
+
 
 export const ChatCloseIcon = styled(IoIosCloseCircle)`
   font-size: 24px;
