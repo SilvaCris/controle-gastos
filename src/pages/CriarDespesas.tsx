@@ -97,8 +97,8 @@ const CriarDespesas = () => {
         />
 
         <S.Select name="tipo" value={form.tipo} onChange={handleChange}>
-          <option value="entrada">Ganhos</option>
-          <option value="saída">Gastos</option>
+          <option value="entrada">Entrada</option>
+          <option value="saída">Saída</option>
         </S.Select>
 
         <S.Input

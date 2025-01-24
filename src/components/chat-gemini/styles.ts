@@ -1,5 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { IoIosCloseCircle } from "react-icons/io";
+
+
+// Animação para o ícone
+const bounceAnimation = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+`;
 
 export const ChatIcon = styled.div`
   position: fixed;
@@ -13,6 +24,39 @@ export const ChatIcon = styled.div`
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+
+  /* Animação ao carregar */
+  animation: ${bounceAnimation} 1s ease infinite;
+
+  &:hover {
+    background: #ff8c00; /* Cor de destaque ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho */
+  }
+
+  &:hover > span {
+    visibility: visible;
+    opacity: 1;
+  }
+`;
+
+export const ChatText = styled.span`
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 60px; /* Acima do ícone */
+  left: 10%;
+  transform: translateX(-50%);
+ background-color:rgb(134, 201, 219);
+  color:rgb(10, 10, 10);
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 `;
 
 export const ChatContainer = styled.div`
@@ -29,22 +73,7 @@ export const ChatContainer = styled.div`
   flex-direction: column;
   overflow: hidden;
 `;
-export const UserName = styled.p`
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  background-color: #d1b3ff;
-  border-radius: 5px;
-  padding: 5px;
-  color: black;
-  text-align: left;
-   ${ChatContainer}:hover & {
-      opacity: 1;
-    }
-  `;
+
 
   export const Avatar = styled.img`
   width: 50px;

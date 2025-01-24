@@ -38,8 +38,8 @@ const ChatGemini = ({ despesas }: { despesas: any[] }) => {
     try {
       const response = await http.post("/chat", {
         uid: user?.uid,
-        message: "Iniciando conversa",
-        userName, // Envia o nome do usuário
+        message: "Olá",
+        userName, 
       });
 
       // Atualiza mensagens do estado
@@ -81,8 +81,9 @@ const ChatGemini = ({ despesas }: { despesas: any[] }) => {
   return (
     <>
       {/* Ícone para abrir/fechar o chat */}
-      <S.ChatIcon onClick={toggleChat} title="Fale com a Gal">
-        <AiOutlineMessage size={32} />
+      <S.ChatIcon onClick={toggleChat} >
+        <AiOutlineMessage size={42} />
+        <S.ChatText>Fale com a Gal</S.ChatText>
       </S.ChatIcon>
 
       {isOpen && (

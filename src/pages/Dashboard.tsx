@@ -55,15 +55,15 @@ const Dashboard = () => {
       <S.Title>Dashboard de Finanças</S.Title>
       {/* Totais de Entradas, Saídas e Saldo */}
       <S.CardsContainer>
-        <S.Card bgColor="#FF8C00">
+        <S.Card bgColor="#3CB371">
           <p>Entradas</p>
           <p>R$ {entradas.toFixed(2)}</p>
         </S.Card>
-        <S.Card bgColor="#B22222">
+        <S.Card bgColor="#FA8072">
           <p>Saídas</p>
           <p>R$ {saidas.toFixed(2)}</p>
         </S.Card>
-        <S.Card bgColor="#006400">
+        <S.Card bgColor="#FF8C00">
           <p>Saldo</p>
           <p>R$ {saldo.toFixed(2)}</p>
         </S.Card>

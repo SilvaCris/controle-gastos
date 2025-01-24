@@ -5,7 +5,7 @@ import { StyledFooter } from './styles'
 const Footer = () => {
   return (
     <StyledFooter>
-      Desenvolvido com 🤍 por Crislaine Silva!
+      Desenvolvido com 🤎 no Aprofunda Pretalab
     </StyledFooter>
   );
 };

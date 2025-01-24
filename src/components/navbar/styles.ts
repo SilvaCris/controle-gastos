@@ -36,7 +36,7 @@ export const UserName = styled.p`
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  background-color: #d1b3ff;
+  background-color:rgb(134, 201, 219);
   border-radius: 5px;
   padding: 5px;
   color: black;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import finance from '../assets/finance.png';
+import avatar from '../assets/avatar-assistente.png'
 
 export const Container = styled.div`
   display: flex;
@@ -9,6 +10,50 @@ export const Container = styled.div`
   min-height: calc(100vh - 100px);
   background-color: #faedfa; 
   padding-bottom: 5rem;
+`;
+
+export const LeftContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  max-width: 80%; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o container */
+  gap: 2rem; /* Espaçamento entre imagem e texto */
+  
+`;
+
+export const RightContainer = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  max-width: 80%; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o container */
+  gap: 2rem; /* Espaçamento entre imagem e texto */
+`;
+
+export const ImageContainer = styled.div`
+  background-image: url(${finance});
+  background-size: cover;
+  width: 400px; 
+  height: 400px;
+  border-radius: 8px;
+ 
+
+
+`;
+
+export const AvatarContainer = styled.div`
+  background-image: url(${avatar});
+  background-size: cover;
+  width: 280px; /* Reduzido para evitar afastamento excessivo */
+  height: 280px;
+  border-radus: 50%;
+  margin-top: 2px;
+  
 `;
 
 export const Title = styled.h1`
@@ -23,13 +68,6 @@ export const Subtitle = styled.p`
   margin-top: 20px;
 `;
 
-export const ImageContainer = styled.div`
-  background-image: url(${finance});
-  background-size: cover;
-  margin-bottom: 10px;
-  width: 500px;
-  height: 500px;
-`;
 
 export const Form = styled.form`
   display: flex;
@@ -158,7 +196,7 @@ interface CardProps {
 
 export const Card = styled.div<CardProps>`
   background-color: ${(props) => props.bgColor || '#fff'}; /* Usando interpolação corretamente */
-  color: #fff;
+  color: #000000;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
